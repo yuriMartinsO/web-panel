@@ -9,5 +9,4 @@ public class DeployRender {
 	public static void main(String[] args) {
 		SpringApplication.run(DeployRender.class, args);
 	}
-
 }
