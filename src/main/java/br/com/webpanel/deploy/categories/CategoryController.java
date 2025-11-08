@@ -17,7 +17,7 @@ import br.com.webpanel.deploy.categories.dto.CreateCategoryDto;
 import br.com.webpanel.deploy.categories.dto.RecoveryCategoryDto;
 
 @RestController
-@RequestMapping(value = "/categories", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/api/category", produces = MediaType.APPLICATION_JSON_VALUE)
 @Tag(name = "Categories", description = "Category management endpoints")
 public class CategoryController {
 

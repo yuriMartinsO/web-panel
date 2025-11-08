@@ -12,13 +12,14 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
 
 import br.com.webpanel.deploy.images.dto.CreateImageDto;
 import br.com.webpanel.deploy.images.dto.RecoveryImageDto;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/api/images")
+@RequestMapping(value = "/api/image", produces = MediaType.APPLICATION_JSON_VALUE)
 @RequiredArgsConstructor
 public class ImageController {
     private final ImageService imageService;
